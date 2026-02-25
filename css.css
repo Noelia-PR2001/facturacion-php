@@ -1,0 +1,205 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 40px;
+    color: #555;
+}
+
+
+#bill{
+    background: white;
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 60px;
+}
+
+#bill::before{
+    content: "";
+    display: block;
+    height: 8px;
+    background-color: #5b3fa6;
+    margin-bottom: 40px;
+}
+
+
+.inner-content-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+#main-name{
+    font-size: 34px;
+    font-weight: bold;
+    color: #5b3fa6;
+    margin-bottom: 10px;
+}
+
+
+#information ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#information li{
+    margin-bottom: 4px;
+}
+
+#main-title{
+    font-size: 70px;
+    color: #5b3fa6;
+    margin: 0;
+}
+.inner-content-2{
+    margin-top: 40px;
+}
+
+.inner-content-2 small{
+    color: #e23b8e;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.inner-content-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 120px;
+    margin-top: 60px;
+}
+
+
+.inner-content-3 strong,
+#client-info > p:first-child{
+    font-size: 18px;
+    color: #333;
+}
+
+
+.inner-content-3 div{
+    line-height: 1.6;
+}
+
+
+#client-info ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#client-info li{
+    margin-bottom: 5px;
+}
+
+#logo img{
+    width: 120px;
+    height: auto;
+}
+
+#logo{
+    display: flex;
+    align-items: flex-start;
+}
+
+#qr-verifactu{
+    visibility: hidden;
+    width: 150px;
+}
+
+.linea-separadora{
+    border-top: 1px solid #dcdcdc;
+    margin: 40px 0;
+}
+
+.tabla-factura{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.tabla-factura th{
+    color: #5b3fa6;
+    padding-bottom: 15px;
+}
+
+.tabla-factura th:nth-child(1){
+    text-align: left;
+}
+.tabla-factura th:nth-child(2){
+    text-align: center;
+}
+.tabla-factura th:nth-child(3),
+.tabla-factura th:nth-child(4){
+    text-align: right;
+}
+
+.tabla-factura td{
+    padding: 12px 0;
+}
+
+.tabla-factura td:nth-child(1){
+    text-align: left;
+}
+
+.tabla-factura td:nth-child(2){
+    text-align: center;
+}
+
+.tabla-factura td:nth-child(3),
+.tabla-factura td:nth-child(4){
+    text-align: right;
+}
+
+.tabla-factura tbody tr:nth-child(odd){
+    background-color: #f3f3f3;
+}
+
+.fila-vacia{
+    height: 40px;
+}
+
+.bloque-final{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.notas{
+    width: 50%;
+}
+
+.iban{
+    color: #e23b8e;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.totales{
+    width: 35%;
+}
+
+.fila-total{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.fila-total span:first-child{
+    color: #5b3fa6;
+    font-weight: bold;
+}
+
+.fila-total span:last-child{
+    font-weight: bold;
+}
+
+.total-final{
+    text-align: right;
+    font-size: 32px;
+    font-weight: bold;
+    color: #e23b8e;
+    margin-top: 15px;
+}
