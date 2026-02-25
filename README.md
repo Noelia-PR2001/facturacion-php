@@ -43,7 +43,7 @@ El proyecto utiliza las siguientes tecnologías:
 
 **Composer** → Gestión de dependencias.
 
-**DomPDF** → Converión de HTML a PDF.
+**HTML2PDF** → Converión de HTML a PDF.
 
 **PHPMailer** → Envío de correos electrónicos mediante SMTP.
 
