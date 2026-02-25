@@ -49,7 +49,10 @@ El proyecto utiliza las siguientes tecnologías:
 
 
 Puede consultar el código completo del proyecto en el siguiente repositorio oficial:
-[Repositorio de facturacion-php](https://github.com/Noelia-PR2001/facturacion-php).
+
+Repositorio de facturacion-php:
+
+https://github.com/Noelia-PR2001/facturacion-php.
 
 
 
