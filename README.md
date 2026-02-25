@@ -22,7 +22,7 @@ Esta solución está orientada a mejorar la eficiencia administrativa, reducir e
 1. El usuario introduce los datos en el formulario.
 2. El sistema lo procesa y valida la información recibida.
 3. Se genera dinámicamente documento en formato HTML.
-4. El documento HTML se convierte en PDF.
+4. El documento HTML se convierte en PDF mediante HTML2PDF.
 5. EL PDF se envía automáticamente por correo electronico al cliente.
 
 ## 🖼️Vista del sistema
@@ -89,6 +89,8 @@ También puede descargarse como archivo ZIP desde GitHub.
 
 Ejecutar el siguiente comando dentro de la carpeta raíz del proyecto:
 `composer install`
+`composer require spipu/html2pdf`
+`composer require phpmailer/phpmailer`
 
 Este comando instalará automáticamente las librerías necesarias (DomPDF y PHPMailer) y generará la carpeta `vendor`.
 
