@@ -17,13 +17,13 @@ Esta solución está orientada a mejorar la eficiencia administrativa, reducir e
 * Enviar facturas automáticamente por correo electronico.
 * Optimizar el proceso administrativo.
 
-## 🔄Flujo de Funcionamiento
+## 🔄 Flujo de Funcionamiento
 
 1. El usuario introduce los datos en el formulario.
 2. El sistema lo procesa y valida la información recibida.
-3. Se genera dinámicamente documento en formato HTML.
+3. Se genera dinámicamente el documento en formato HTML.
 4. El documento HTML se convierte en PDF mediante HTML2PDF.
-5. EL PDF se envía automáticamente por correo electronico al cliente.
+5. El PDF se envía automáticamente por correo electrónico al cliente.
 
 ## 🖼️Vista del sistema
 
@@ -43,7 +43,7 @@ El proyecto utiliza las siguientes tecnologías:
 
 **Composer** → Gestión de dependencias.
 
-**HTML2PDF** → Converión de HTML a PDF.
+**HTML2PDF** → Conversión de HTML a formato PDF.
 
 **PHPMailer** → Envío de correos electrónicos mediante SMTP.
 
@@ -88,11 +88,11 @@ También puede descargarse como archivo ZIP desde GitHub.
 ## 3️⃣ Instalar Dependencias
 
 Ejecutar el siguiente comando dentro de la carpeta raíz del proyecto:
-`composer install`
-`composer require spipu/html2pdf`
-`composer require phpmailer/phpmailer`
+composer install
+composer require spipu/html2pdf
+composer require phpmailer/phpmailer
 
-Este comando instalará automáticamente las librerías necesarias (HTML2PDF y PHPMailer) y generará la carpeta `vendor`.
+Este comando instalará automáticamente las librerías necesarias (HTML2PDF y PHPMailer) y generará la carpeta 'vendor/autoload.php';
 
 ## 4️⃣ Configurar el Servidor Local 
 Colocar la carpeta del proyecto dentro del directorio:
@@ -122,6 +122,6 @@ http://localhost/proyecto_factura/
 * Se recomienda utilizar variables de entorno en producción. 
 * Envío SMTP debe realizarse mediante conexión segura (TLS/SSL).
  ## 👨‍💻 Autor
- Noelia Parra Rodriguez.
+ Noelia Parra Rodríguez.
 
  Proyecto desarrollado con fines formativos y aplicación profesional.
