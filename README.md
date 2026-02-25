@@ -110,7 +110,7 @@ Editar el archivo `mail.php` e introducir las credenciales SMTP correspondientes
 
 Abrir el navegador y acceder a:
 
-http://localhost/facturacion-php/
+http://localhost/proyecto_factura/
 
 ## 🔒 Seguridad
 * No se incluyen credenciales sensibles en el repositorio.
