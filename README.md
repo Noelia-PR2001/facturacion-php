@@ -4,7 +4,9 @@
 
 Este proyecto consiste en el desarrollo de una aplicación web orientada a la automatización del proceso de generación y envío de facturas digitales en formato PDF.
 
-El sistema permite que, a través de un formulario web, el usuario introduzca los datos necesarios para generar una factura estructurada profesionalmente. Posteriormente, la aplicación procesa la información, genera un documento en formato PDF utilizando la librería HTML2PDF y lo envía automáticamente por correo electrónico al cliente mediante PHPMailer.
+El sistema permite que, a través de un formulario web, el usuario introduzca los datos necesarios para generar una factura estructurada profesionalmente. Posteriormente, la aplicación procesa la información, genera un documento en formato PDF utilizando la librería **HTML2PDF** y lo envía automáticamente por correo electrónico al cliente mediante **PHPMailer**.
+
+Las librerías externas utilizadas en el proyecto se encuentran incluidas manualmente dentro del mismo, por lo que no se requiere el uso de Composer para su instalación.
 
 La solución está diseñada para mejorar la eficiencia administrativa, reducir errores humanos y optimizar el flujo de trabajo en la gestión de facturación.
 
@@ -28,7 +30,7 @@ La solución está diseñada para mejorar la eficiencia administrativa, reducir 
 4. El documento HTML se convierte en PDF mediante HTML2PDF.
 5. El PDF se envía automáticamente por correo electrónico al cliente.
 
-
+---
 
 ## 🖼️ Vista del Sistema
 
@@ -43,12 +45,8 @@ A continuación se muestra la interfaz principal del sistema donde el usuario in
 - **PHP** → Lógica del lado del servidor.
 - **HTML5** → Estructura del documento.
 - **CSS3** → Diseño y presentación visual.
-- **HTML2PDF** → Conversión de HTML a formato PDF.
-- **PHPMailer** → Envío de correos electrónicos mediante SMTP.
-
-Repositorio oficial del proyecto:
-
-🔗 https://github.com/Noelia-PR2001/facturacion-php
+- **HTML2PDF** → Conversión de HTML a formato PDF (incluida manualmente en el proyecto).
+- **PHPMailer** → Envío de correos electrónicos mediante SMTP (incluida manualmente en el proyecto).
 
 
 
@@ -61,8 +59,10 @@ Repositorio oficial del proyecto:
 | generar_pdf.php | Generación del documento PDF |
 | mail.php | Gestión del envío del correo electrónico |
 | css.css | Definición del diseño visual |
+| html2pdf/ | Librería HTML2PDF incluida manualmente |
+| PHPMailer/ | Librería PHPMailer incluida manualmente |
 
----
+
 
 ## 🚀 Instalación y Ejecución
 
@@ -73,7 +73,9 @@ Para ejecutar el proyecto en un entorno local:
 2. Iniciar Apache desde el panel de control de XAMPP.
 3. Acceder desde el navegador a:
    http://localhost/proyecto_factura/
-   
+
+No se requiere instalación mediante Composer, ya que las librerías necesarias se encuentran incluidas en el proyecto.
+
 ## ⚙️ Configuración del Servicio de Correo
 
 Editar el archivo `mail.php` e introducir las credenciales SMTP correspondientes:
@@ -83,7 +85,6 @@ Editar el archivo `mail.php` e introducir las credenciales SMTP correspondientes
 - Contraseña  
 - Puerto  
 - Tipo de cifrado (TLS/SSL)
-
 
 
 ## 🔒 Seguridad
