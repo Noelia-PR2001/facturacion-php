@@ -92,7 +92,7 @@ Ejecutar el siguiente comando dentro de la carpeta raíz del proyecto:
 `composer require spipu/html2pdf`
 `composer require phpmailer/phpmailer`
 
-Este comando instalará automáticamente las librerías necesarias (DomPDF y PHPMailer) y generará la carpeta `vendor`.
+Este comando instalará automáticamente las librerías necesarias (HTML2PDF y PHPMailer) y generará la carpeta `vendor`.
 
 ## 4️⃣ Configurar el Servidor Local 
 Colocar la carpeta del proyecto dentro del directorio:
