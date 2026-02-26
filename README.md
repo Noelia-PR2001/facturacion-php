@@ -1,102 +1,61 @@
-# 🧾 Sistema Automatizado de Generación y Envío de Facturas en PHP
+#  📩 Proyecto Factura – Generador y Envío Automático
 
-## 📌 Introducción
+## 📌 ¿Qué es este proyecto?
+En este proyecto he creado una pequeña aplicacion que permite generar una factura automáticamente a partir de un formulario.
 
-Este proyecto consiste en el desarrollo de una aplicación web orientada a la automatización del proceso de generación y envío de facturas digitales en formato PDF.
+La idea es sencilla: 
 
-El sistema permite que, a través de un formulario web, el usuario introduzca los datos necesarios para generar una factura estructurada profesionalmente. Posteriormente, la aplicación procesa la información, genera un documento en formato PDF utilizando la librería **HTML2PDF** y lo envía automáticamente por correo electrónico al cliente mediante **PHPMailer**.
+1. Formulario.
+2. Se genera la factura .
+3. Se convierte en PDF.
+4. Se envía por email al cliente. 
 
-Las librerías externas utilizadas en el proyecto se encuentran incluidas manualmente dentro del mismo, por lo que no se requiere el uso de Composer para su instalación.
-
-La solución está diseñada para mejorar la eficiencia administrativa, reducir errores humanos y optimizar el flujo de trabajo en la gestión de facturación.
-
-
-
-## 🎯 Objetivos del Sistema
-
-- Automatizar la generación de facturas digitales.
-- Reducir errores manuales en cálculos.
-- Generar documentos PDF con formato profesional.
-- Enviar facturas automáticamente por correo electrónico.
-- Optimizar el proceso administrativo.
+Con esto se evita tener que hacer facturas manualmente una por una.
 
 
+## 🎯 ¿Qué he hecho exactamente?
+El sistema permite:
 
-## 🔄 Flujo de Funcionamiento
+* Rellenar los datos del cliente desde el formulario.
+* Calcular automáticamente importes.
+* Generar una factura.
+* Crear un PDF con esa factura.
+* Enviarlo directamente al correo del cliente.
 
-1. El usuario introduce los datos en el formulario.
-2. El sistema procesa y valida la información recibida.
-3. Se genera dinámicamente el documento en formato HTML.
-4. El documento HTML se convierte en PDF mediante HTML2PDF.
-5. El PDF se envía automáticamente por correo electrónico al cliente.
+Todo el proceso se hace de forma automática.
 
----
+## 🛠 ¿Cómo lo he construido?
+He dividido el proyecto en varias partes para que cada una tenga una función concreta:
 
-## 🖼️ Vista del Sistema
+* `index.php`: Es el formulario donde se introducen los datos.   
+* `bill.php`: Procesa la información y hace cálculos.
+* `generar_pdf.php`: Convierte la factura en PDF.
+* `mail.php`: Envía el PDF por correo electrónico.
 
-A continuación se muestra la interfaz principal del sistema donde el usuario introduce los datos necesarios para la generación de la factura:
+Para convertir el HTML en PDF he usado una librería llamada HTML2PDF. 
 
-![Formulario de generación de factura](Formulario.png)
+Para enviar el correo he utilizado PHPMailer.
 
+## 🖼️  Vista del Formulario
 
+Aqui se puede ver el formulario principal donde se introducen datos:
 
-## 🛠️ Tecnologías y Librerías Utilizadas
+![Email](tarjeta.png)
 
-- **PHP** → Lógica del lado del servidor.
-- **HTML5** → Estructura del documento.
-- **CSS3** → Diseño y presentación visual.
-- **HTML2PDF** → Conversión de HTML a formato PDF (incluida manualmente en el proyecto).
-- **PHPMailer** → Envío de correos electrónicos mediante SMTP (incluida manualmente en el proyecto).
+## 💬 Mi experiencia haciendo este proyecto
+Este proyecto me ha parecido más completo que los anteriores porque tiene varias partes conectadas entre sí.
 
+He aprendido cómo se comunican distintos archivos en PHP y cómo pasar información de uno a otro.
 
+También he entendido mejor cómo funciona el envío de correos mediante SMTP y cómo generar archivos PDF automáticamente a partir de un HTML.
 
-## 📂 Estructura del Proyecto
+Al principio fue un poco lioso, porque HTML2PDF no permitia etiquetas: div, main, flex, grid ni CSS muy modernos, pero cuando entendi como organizar todo el flujo, entendí como funciona:
 
-| Archivo | Función |
-|----------|----------|
-| index.php | Formulario principal de entrada de datos |
-| bill.php | Procesamiento de información y cálculos |
-| generar_pdf.php | Generación del documento PDF |
-| mail.php | Gestión del envío del correo electrónico |
-| css.css | Definición del diseño visual |
-| html2pdf/ | Librería HTML2PDF incluida manualmente |
-| PHPMailer/ | Librería PHPMailer incluida manualmente |
+1. Formulario.
+2. Proceso.
+3. PDF.
+4. Email.
 
-
-
-## 🚀 Instalación y Ejecución
-
-Para ejecutar el proyecto en un entorno local:
-
-1. Copiar la carpeta del proyecto dentro de:
-   C:\xampp\htdocs\
-2. Iniciar Apache desde el panel de control de XAMPP.
-3. Acceder desde el navegador a:
-   http://localhost/proyecto_factura/
-
-No se requiere instalación mediante Composer, ya que las librerías necesarias se encuentran incluidas en el proyecto.
-
-## ⚙️ Configuración del Servicio de Correo
-
-Editar el archivo `mail.php` e introducir las credenciales SMTP correspondientes:
-
-- Host SMTP  
-- Usuario  
-- Contraseña  
-- Puerto  
-- Tipo de cifrado (TLS/SSL)
-
-
-## 🔒 Seguridad
-
-- No se incluyen credenciales sensibles en el repositorio.
-- Se recomienda proteger los datos SMTP en entornos de producción.
-- El envío SMTP debe realizarse mediante conexión segura (TLS/SSL).
-
-
-
-## 👩‍💻 Autor
-
-Noelia Parra Rodríguez  
-
-Proyecto desarrollado con fines formativos y aplicación profesional.
+## 👨‍💻 Autora
+Noelia Parra Rodríguez.
+Practicas en onsistems.
