@@ -40,7 +40,7 @@ Para enviar el correo he utilizado PHPMailer.
 
 Aqui se puede ver el formulario principal donde se introducen datos:
 
-![Email](tarjeta.png)
+![Formulario](Formulario.png)
 
 ## 💬 Mi experiencia haciendo este proyecto
 Este proyecto me ha parecido más completo que los anteriores porque tiene varias partes conectadas entre sí.
